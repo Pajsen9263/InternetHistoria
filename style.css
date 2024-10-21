@@ -1,21 +1,18 @@
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    background: linear-gradient(to bottom, #f5f7fa, #e3e8ee);
-    color: #333;
+    font-family: 'Courier New', monospace;
+    background-color: #000;
+    color: #00ff00;
     margin: 0;
     padding: 0;
     line-height: 1.6;
 }
 
 header {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #1c1c1c;
+    color: #00ff00;
     padding: 20px;
     text-align: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    border-bottom: 2px solid #00ff00;
 }
 
 nav ul {
@@ -26,37 +23,35 @@ nav ul {
     gap: 20px;
 }
 
+nav ul li {
+    margin: 0;
+}
+
 nav ul li a {
-    color: #ecf0f1;
+    color: #00ff00;
     text-decoration: none;
     font-weight: bold;
-    padding: 5px 10px;
-    border-radius: 5px;
-    transition: background-color 0.3s;
 }
 
 nav ul li a:hover {
-    background-color: #3498db;
+    text-decoration: underline;
 }
 
 section {
-    padding: 60px 20px;
+    padding: 40px 20px;
     max-width: 800px;
     margin: 20px auto;
-    background: #ffffff;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    background: #2c3e50;
+    box-shadow: 0px 4px 8px rgba(0, 255, 0, 0.1);
+    margin-bottom: 20px;
     border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-section:hover {
-    transform: translateY(-5px);
 }
 
 h2 {
-    color: #2c3e50;
-    margin-bottom: 20px;
-    font-size: 1.75rem;
+    color: #00ff00;
+    margin-bottom: 10px;
+    font-size: 1.5rem;
 }
 
 .timeline {
@@ -67,29 +62,19 @@ h2 {
 }
 
 .event {
-    background-color: #ecf0f1;
-    border: 2px solid #bdc3c7;
-    border-radius: 10px;
+    background-color: #1c1c1c;
+    border: 1px solid #00ff00;
+    border-radius: 5px;
     padding: 20px;
     text-align: left;
 }
 
-.fade-in {
-    opacity: 0;
-    animation: fadeIn 1s ease-in forwards;
-}
-
-@keyframes fadeIn {
-    to {
-        opacity: 1;
-    }
-}
-
 footer {
-    background-color: #2c3e50;
-    color: #ecf0f1;
+    background-color: #1c1c1c;
+    color: #00ff00;
     padding: 20px;
     text-align: center;
+    border-top: 1px solid #00ff00;
 }
 
 .image-container {
@@ -100,13 +85,16 @@ footer {
     max-width: 100%;
     height: auto;
     border-radius: 5px;
-    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    box-shadow: 0px 2px 4px rgba(0, 255, 0, 0.5);
 }
 
-a {
-    color: #3498db;
+.fade-in {
+    opacity: 0;
+    animation: fadeIn 0.5s ease-in forwards;
 }
 
-a:hover {
-    text-decoration: underline;
+@keyframes fadeIn {
+    to {
+        opacity: 1;
+    }
 }
