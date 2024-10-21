@@ -98,3 +98,22 @@ footer {
         opacity: 1;
     }
 }
+
+.image-comparison {
+    display: flex; /* Flexbox for horizontal alignment */
+    justify-content: space-around; /* Space images evenly */
+    margin-bottom: 20px; /* Space between each group */
+}
+
+.image-container {
+    flex: 0 0 45%; /* Set each container to take up 45% of the row */
+    text-align: center; /* Center-align text within containers */
+}
+
+.responsive-image {
+    max-width: 100%; /* Make images responsive */
+    height: auto; /* Maintain aspect ratio */
+    border-radius: 5px; /* Rounded corners for images */
+    box-shadow: 0px 2px 4px rgba(0, 255, 0, 0.5); /* Shadow effect */
+}
+
