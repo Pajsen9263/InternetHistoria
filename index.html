@@ -105,51 +105,51 @@
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Webbläsarmarknadsandelar 2013</h3>
-                <img src="path/to/your/browser_market_share_2013.png" alt="Browser Market Share 2013" class="responsive-image">
+                <img src="/browser.png" alt="Browser Market Share 2013" class="responsive-image">
             </div>
             <div class="image-container">
                 <h3>Webbläsarmarknadsandelar 2017</h3>
-                <img src="path/to/your/browser_market_share_2017.png" alt="Browser Market Share 2017" class="responsive-image">
+                <img src="/browser2.png" alt="Browser Market Share 2017" class="responsive-image">
             </div>
         </div>
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Enhetsmarknadsandelar 2013</h3>
-                <img src="/bv-2013.png" alt="Device Type Market Share 2013" class="responsive-image">
+                <img src="/Device.png" alt="Device Type Market Share 2013" class="responsive-image">
             </div>
             <div class="image-container">
                 <h3>Enhetsmarknadsandelar 2017</h3>
-                <img src="bv-2017.png" alt="Device Type Market Share 2017" class="responsive-image">
+                <img src="/Device2.png" alt="Device Type Market Share 2017" class="responsive-image">
             </div>
         </div>
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Sökmotormarknadsandelar 2013</h3>
-                <img src="path/to/your/search_engine_market_share_2013.png" alt="Search Engine Market Share 2013" class="responsive-image">
+                <img src="/engine.png" alt="Search Engine Market Share 2013" class="responsive-image">
             </div>
             <div class="image-container">
                 <h3>Sökmotormarknadsandelar 2017</h3>
-                <img src="path/to/your/search_engine_market_share_2017.png" alt="Search Engine Market Share 2017" class="responsive-image">
+                <img src="engine2.png" alt="Search Engine Market Share 2017" class="responsive-image">
             </div>
         </div>
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Sociala medier marknadsandelar 2013</h3>
-                <img src="path/to/your/social_media_market_share_2013.png" alt="Social Media Market Share 2013" class="responsive-image">
+                <img src="/social.png" alt="Social Media Market Share 2013" class="responsive-image">
             </div>
             <div class="image-container">
                 <h3>Sociala medier marknadsandelar 2017</h3>
-                <img src="path/to/your/social_media_market_share_2017.png" alt="Social Media Market Share 2017" class="responsive-image">
+                <img src="/social2.png" alt="Social Media Market Share 2017" class="responsive-image">
             </div>
         </div>
         <div class="image-comparison">
             <div class="image-container">
                 <h3>Enhetstillverkare marknadsandelar (telefon) 2013</h3>
-                <img src="path/to/your/device_vendor_market_share_2013.png" alt="Device Vendor Market Share 2013" class="responsive-image">
+                <img src="/phone.png" alt="Device Vendor Market Share 2013" class="responsive-image">
             </div>
             <div class="image-container">
                 <h3>Enhetstillverkare marknadsandelar (telefon) 2017</h3>
-                <img src="path/to/your/device_vendor_market_share_2017.png" alt="Device Vendor Market Share 2017" class="responsive-image">
+                <img src="/phone2.png" alt="Device Vendor Market Share 2017" class="responsive-image">
             </div>
         </div>
     </section>
@@ -161,6 +161,47 @@
             <img src="https://cdn.pajsen.se/mutU1/boNonuVe54.png/raw" alt="Exempelbild" class="responsive-image">
             <p>Bild: En översikt av Discords startsida 2016.</p>
         </div>
+    </section>
+    <section id="design-philosophy" class="fade-in">
+        <h2>Design och Layout</h2>
+    
+        <h3>Motivering av Färgschema</h3>
+        <p>
+            Färgschemat är valt för att vara stilrent och lättläst. Den mörkblå bakgrunden i
+            <code>header</code> och <code>footer</code> ger sidan ett modernt och professionellt intryck, samtidigt som den vita färgen på
+            texten skapar en stark kontrast för ökad läsbarhet. Accentfärger, som ljusblått på länkar och knappar,
+            används för att dra uppmärksamhet till viktiga element, utan att överväldiga användaren. 
+        </p>
+    
+        <h3>Layout och Responsiv Design</h3>
+        <p>
+            Layouten är skapad med enkelhet i åtanke, där texten är centrerad och sektionerna har tydliga avdelningar.
+            På större skärmar (PC) finns tillräckligt med utrymme för att bilder och innehåll ska ligga i bredd, medan
+            på mindre skärmar (mobil och surfplattor) kommer innehållet att staplas vertikalt för att förbättra användarupplevelsen. 
+            Detta uppnås genom att använda <code>flexbox</code> och <code>media queries</code> i CSS. Flexbox gör att elementen kan ordnas horisontellt eller vertikalt beroende på skärmbredd.
+        </p>
+        <p>
+            Exempelvis:
+        </p>
+        <ul>
+            <li>På PC visas bilderna i jämförelsedelen bredvid varandra, medan de på mobil visas ovanpå varandra.</li>
+            <li>Textblock och bilder har marginaler och padding som anpassas automatiskt beroende på skärmens storlek för att ge ett luftigt och läsbart intryck.</li>
+        </ul>
+    
+        <h3>Logotyp</h3>
+        <p>
+            En enkel logotyp med webbinspirerade element skulle passa denna hemsida. Logotypen kan exempelvis innehålla en
+            stiliserad version av ett "W" (för webben) i en minimalistisk stil, tillsammans med en glob för att symbolisera internet.
+            Denna logga kan placeras i sidhuvudet och fungera som en igenkänningspunkt för användarna.
+        </p>
+    
+        <h3>Val av Typsnitt</h3>
+        <p>
+            Typsnittet som används på sidan är <code>'Helvetica Neue', sans-serif</code>. Det valdes eftersom det är ett modernt, rent och lättläst typsnitt som fungerar bra i både stora och små storlekar. Sans-serif-typsnitt som detta används ofta i webbdesign för att skapa ett enkelt och modernt utseende som också fungerar bra på skärmar av olika storlekar och upplösningar.
+        </p>
+        <p>
+            Kombinationen av Helvetica och färgschemat ger sidan ett professionellt och inbjudande utseende, samtidigt som det upprätthåller användarvänlighet och tydlighet.
+        </p>
     </section>
     
     <footer>
