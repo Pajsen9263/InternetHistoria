@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Källor - Webbens Historia</title>
+    <style>
+        body {
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #2c3e50;
+            color: #ecf0f1;
+            padding: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        .typewriter-container {
+            max-width: 800px;
+            padding: 20px;
+            border: 2px solid #3498db;
+            border-radius: 10px;
+            background-color: #34495e;
+        }
+
+        .typewriter p {
+            font-size: 1.2rem;
+            white-space: nowrap;
+            overflow: hidden;
+            border-right: 2px solid #3498db;
+            width: 0;
+            animation: typing 3.5s steps(40, end) forwards, blink 0.75s step-end infinite;
+        }
+
+        @keyframes typing {
+            from { width: 0; }
+            to { width: 100%; }
+        }
+
+        @keyframes blink {
+            from { border-color: #3498db; }
+            to { border-color: transparent; }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="typewriter-container">
+        <div class="typewriter">
+            <p>Cerf, V., & Kahn, R. (1974). A Protocol for Packet Network Intercommunication. IEEE Transactions on Communications.</p>
+        </div>
+        <div class="typewriter">
+            <p>Leiner, B. M., Cerf, V. G., Clark, D. D., Kahn, R. E., et al. (1997). A Brief History of the Internet. Internet Society.</p>
+        </div>
+        <div class="typewriter">
+            <p>Berners-Lee, T. (1990). Information Management: A Proposal. CERN.</p>
+        </div>
+        <div class="typewriter">
+            <p>Naughton, J. (2016). A Brief History of the Future: The Origins of the Internet. Hachette UK.</p>
+        </div>
+        <div class="typewriter">
+            <p>Gillies, J., & Cailliau, R. (2000). How the Web Was Born: The Story of the World Wide Web. Oxford University Press.</p>
+        </div>
+    </div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            let typewriterContainers = document.querySelectorAll(".typewriter p");
+            let delay = 0;
+
+            typewriterContainers.forEach(function(container) {
+                container.style.animationDelay = `${delay}s`;
+                delay += 4;  // Adjust the delay between the start of each typewriter effect
+            });
+        });
+    </script>
+
+</body>
+</html>
